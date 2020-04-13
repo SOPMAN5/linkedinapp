@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "test": "NODE_ENV=test mocha src/tests --timeout 60000",
-    "start": "NODE_ENV=dev nodemon --ignore 'assets/*' src/server.js",
+    "start": "node src/cli.js",
     "forever": "NODE_ENV=production forever --id linkedin start src/server.js",
     "build": "webpack --mode production",
     "dev-build": "webpack --watch=true --mode development"
