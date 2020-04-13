@@ -48,7 +48,7 @@ function createApp() {
 		}
 	});
 
-	return app;
+	return app.listen(serverport);
 }
 
 if (process.env.NODE_ENV == 'test')
